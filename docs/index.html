@@ -1,10 +1,23 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Hello Tommy</title>
-  </head>
-  <body>
-    <h1>Hello Tomy</h1>
-  </body>
-</html>
+---
+layout: default
+title: Home
+nav:
+  - Home
+  - Blog
+welcome_msg: "Tu bar favorito"
+nav_weight: 1
+icon: fa-home
+---
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Hello Tommy</h1>
+      <h2>{{page.welcome_msg}}</h2>
+
+      {% for event in site.data.events %}
+      <h1>{{event.name}}</h1>
+      <img class="img-responsive" src="images/{{event.img}}.jpg" alt="" />
+      {% endfor %}
+    </div>
+  </div>
+</div>

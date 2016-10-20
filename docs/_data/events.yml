@@ -1,0 +1,8 @@
+- name: Event1
+  img: post1
+
+- name: Event2
+  img: post2
+
+- name: Event3
+  img: post3
